@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VectorShift</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>VectorShift</h1>
+    <input type="file" id="upload" accept=".svg">
+    <div class="preview" id="preview"></div>
+    <div class="styles">
+      <button class="style-btn" data-style="flat">Flat</button>
+      <button class="style-btn" data-style="isometric">Isométrico</button>
+      <button class="style-btn" data-style="cartoon">Cartoon</button>
+      <button class="style-btn" data-style="retro">Retrô</button>
+    </div>
+    <button id="export">Exportar</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/svg.js@3.1.2/dist/svg.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
