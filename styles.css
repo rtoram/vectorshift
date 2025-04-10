@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3b1e5e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.preview {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.styles {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.style-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.style-btn:hover {
+  background: #00d4ff;
+  color: #1e1e2f;
+  box-shadow: 0 0 15px #00d4ff;
+}
+
+#export {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff007a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  .preview { height: 200px; }
+  .style-btn { padding: 8px 15px; }
+}
